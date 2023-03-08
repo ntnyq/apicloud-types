@@ -1,0 +1,11 @@
+{
+  "eslint.enable": false,
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "cSpell.words": [
+    "bumpp",
+    "changelogithub",
+    "pnpm"
+  ]
+}

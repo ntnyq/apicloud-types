@@ -1,0 +1,40 @@
+{
+  "name": "apicloud-types",
+  "version": "0.0.0",
+  "description": "TypeScript definitions for APICloud SDK.",
+  "keywords": [
+    "apicloud",
+    "types",
+    "@types/apicloud",
+    "apicloud-sdk"
+  ],
+  "repository": "ntnyq/apicloud-types",
+  "license": "MIT",
+  "author": {
+    "name": "ntnyq",
+    "email": "ntnyq13@gmail.com"
+  },
+  "types": "./index.d.ts",
+  "files": [
+    "*.d.ts",
+    "lib"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "release": "bumpp && pnpm publish",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": "@ntnyq/prettier-config",
+  "devDependencies": {
+    "@ntnyq/prettier-config": "^1.4.0",
+    "bumpp": "^9.0.0",
+    "husky": "^8.0.3",
+    "nano-staged": "^0.8.0",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "packageManager": "pnpm@7.29.1",
+  "nano-staged": {
+    "*.js,ts,json,md,yml,yaml": "prettier --write"
+  }
+}
